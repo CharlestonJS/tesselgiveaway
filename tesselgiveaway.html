@@ -1,0 +1,26 @@
+<head>
+  <title>Tessel 2 Giveaway</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Tessel 2 Giveaway</h1>
+      <form class="new-entry">
+        <input type="text" name="name" placeholder="Enter your name">
+      </form>
+      {{> signups}}
+    </header>
+    <form class="pick-winner">
+      <button type="submit" name="winner">And The Winner Is!</button>
+    </form>
+  </div>
+</body>
+
+<template name="entrant">
+  <li>{{name}}</li>
+</template>
+
+<template name="signups">
+  <p># of entries {{count}}</p>
+</template>
